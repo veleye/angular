@@ -6,15 +6,15 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
 
 @NgModule({
-  declarations: [
+  declarations: [ // componentlerimizi eklediğimiz yer
     AppComponent,
     ProductComponent
   ],
-  imports: [
+  imports: [ // baska moduller eklenecekse buraya yazılır.. ilerde httpclient modulu ekleyecez
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] // baslangıc - root componenti ndir. bu uygulama bu componentten baslar
 })
 export class AppModule { }
